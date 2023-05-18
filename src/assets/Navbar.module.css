@@ -1,0 +1,36 @@
+/* Navbar.module.css */
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 4rem;
+  background-color: #333;
+  color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  margin: 0 2rem; /* Adjust this value to control the space between links */
+}
+
+.navbar a:hover {
+  color: #ddd;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    padding: 1rem 2rem;
+  }
+
+  .navbar a {
+    margin: 0.5rem 0;
+  }
+}
